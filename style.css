@@ -1,0 +1,522 @@
+/* -------------RESETS------------- */
+/*Resets are used for overwriting default html tag properties*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  font,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+    list-style: none;
+  }
+  html {
+    font-size: 62.5%;
+    height: 100%;
+  }
+  body {
+    color: #2b2b2b;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    overflow-x: hidden;
+    line-height: 1.4;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  article,
+  aside,
+  footer,
+  header,
+  nav,
+  section,
+  time {
+    display: block;
+  }
+  a {
+    text-decoration: none;
+  }
+
+
+  .container {
+    max-width: 60rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .template__wrapper .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background-color: #8ce4f9;
+
+  }
+
+  .template__wrapper .header ul{
+align-items: center;
+display: flex;
+gap: 3rem;
+cursor: pointer;
+font-weight: 700;
+letter-spacing: 1px;
+  }
+
+  .template__wrapper .choose {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+  }
+
+
+/* card */
+.cardcont  {
+    display: flex;
+    justify-content: space-between;
+   padding: 1rem;
+    background-color: #f7f7f7;
+}
+.cardcont .card img {
+    width: 28rem;
+}
+.cardcont .card {
+    background-color: white;
+    width: 28rem;
+    border-radius: 3rem;
+
+
+}
+.cardcont .card .text {
+    margin: 1rem;
+}
+.cardcont .card .text .txt_title{
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+   
+}
+.cardcont .card .text .txt_time img {
+    width: 2rem;
+
+}
+.cardcont .card .text .txt_time {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+}
+.card_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    margin: 1.8rem;
+}
+
+.card_footer .btn {
+background-color: #FFD300;
+padding: 1rem 4rem;
+border-radius: 3rem;
+font-size: 1.5rem;
+font-weight: 600;
+letter-spacing: 2px;
+text-align: center;
+cursor: pointer;
+}
+.card_footer .price h1 {
+font-size: 3rem;
+font-weight: 600;
+letter-spacing: 2px;
+}
+
+/* 1 */
+.cardcont1  {
+    display: flex;
+    justify-content: space-between;
+   padding: 1rem;
+    background-color: #f7f7f7;
+}
+.cardcont1 .card img {
+    width: 28rem;
+}
+.cardcont1 .card {
+    background-color: white;
+    width: 28rem;
+    border-radius: 3rem;
+
+
+}
+.cardcont1 .card .text {
+    margin: 1rem;
+}
+.cardcont1 .card .text .txt_title{
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+   
+}
+.cardcont1 .card .text .txt_time img {
+    width: 2rem;
+
+}
+.cardcont1 .card .text .txt_time {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+
+
+/* 1 */
+
+/* COUNTRIES BTN */
+.all_countrie {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+.btn_c {
+background-color: #FFD300;
+padding: 1rem 4rem;
+border-radius: 3rem;
+font-size: 1.7rem;
+font-weight: 600;
+letter-spacing: 2px;
+cursor: pointer;
+/* width: fit-content; */
+
+
+}
+
+
+/* order */
+.consul {
+    background-image: url(/Adventure/bato.png);
+    background-size: cover;
+    position: relative;
+    height: 15rem;
+    width: 60rem;
+    
+   }
+   .consul .text {
+    width: 50%;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    
+   }
+   .consul .text{
+    font-weight: 600;
+    color: #ffff;
+   }
+   .consul .text h1{
+    font-size: 2.5rem;
+   }
+   .consul .text p{
+    font-size: 1.2rem;
+   }
+   .consul .text .txt_btn{
+    background-color: #FFD300;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-radius: 3rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    /* width: fit-content; */
+    margin-top: 1rem;   
+    cursor: pointer;
+   
+ 
+   }
+    .consul .text .txt_btn h1 {
+        font-size: 1.5rem;
+        color: black;
+    }
+.choose h2{ 
+    font-weight: 700    ;
+    font-size: 2.5rem;
+}
+
+.choose img{
+    width: 4rem;
+}
+
+    /* footer */
+    .footer {
+        background-image: url(/Adventure/foot.jpg);
+        background-size: contain;
+        position: relative;
+        height: 28rem;
+        width: 60rem;
+   
+    }
+
+    .footer__wrapper .us {
+        display: flex;
+        flex-direction: row;
+        padding: 2rem 2rem 0 2rem;
+    }
+
+    .footer__wrapper .us p{
+        padding: .5rem 0 0 0;
+        font-size: 13px;
+    }
+
+    .footer__wrapper .us h1{
+        font-weight: 900;   
+        font-size: 20px;
+    }
+
+    .footers__wrapper .socials img{
+        width: 3.2rem;
+        
+    }
+.imghappy{
+    height: 290px;
+}
+
+.footers__wrapper {
+    display: flex;
+    
+    padding: 3rem 2rem;
+ }
+
+ .footers__wrapper .socials{
+    width: 51%;
+ }
+
+
+ .choose {
+    padding: 2rem 0;
+ }
+
+ .header .branding img{
+    width: 9rem;
+ }
+
+ .footers__wrapper .contactinfo h1{
+    font-weight: 800;
+    font-size: 18px;
+ }
+
+ .footers__wrapper .contactinfo h2{
+margin: 1rem 0 0 0;
+ }
+
+
+
+
+   /* mobile view */ 
+
+   /* header */
+   @media screen and (max-width: 800px){
+    .template__wrapper .header ul {
+        display: none;
+    }
+    .template__wrapper .header {
+        justify-content: center;
+    }
+    .imghappy img {
+        width: 100%;
+    }
+  }
+
+ /* mobile view */ 
+ @media screen and (max-width: 800px){
+    .cardcont {
+        flex-direction: column;
+        transform: scale(1.5);
+        align-items: center;
+        margin-top: 22rem;
+        margin-bottom: 25rem;
+    }
+    .cardcont .card:nth-child(2) {
+        margin-bottom: 10rem;
+    }
+    .cardcont .card .text {
+        font-size: 1.2rem;
+    }
+    .cardcont1 {
+        flex-direction: column;
+        transform: scale(1.5);
+        align-items: center;
+        margin-top: 22rem;
+        margin-bottom: 22.5rem;
+    }
+    .cardcont1 .card .text {
+        font-size: 1.2rem;
+    }
+    .card_footer .btn {
+        font-size: 1rem;
+
+        
+    }
+    .card_footer .price h1 {
+        font-size: 2rem;
+    }
+    .footer__wrapper .us{
+        display: block;
+    }
+    .footers__wrapper {
+        flex-direction: column;
+        padding: 2rem
+    
+    }
+
+    /* all countries */
+    .consul {
+        width: 49rem;
+    }
+    .consul .text {
+        width: 100%;
+        padding-top: 1rem;
+       text-align: center;
+    }
+    .consul .text p {
+        
+        padding-bottom: 1rem;
+    }
+    .consul .text .txt_btn {
+        width: 80%;
+        margin: 0 auto;
+    }
+  
+
+}
+
+  
+
+ /* mobile view */ 
+ @media screen and (max-width: 800px){
+    .cardcont {
+        flex-direction: column;
+        transform: scale(1.5);
+        align-items: center;
+        margin-top: 22rem;
+        margin-bottom: 25rem;
+    }
+    .cardcont .card:nth-child(2) {
+        margin-bottom: 10rem;
+    }
+    .cardcont .card .text {
+        font-size: 1.2rem;
+    }
+    .cardcont1 {
+        flex-direction: column;
+        transform: scale(1.5);
+        align-items: center;
+        margin-top: 22rem;
+        margin-bottom: 22.5rem;
+    }
+    .cardcont1 .card .text {
+        font-size: 1.2rem;
+    }
+    .card_footer .btn {
+        font-size: 1rem;
+
+        
+    }
+    .card_footer .price h1 {
+        font-size: 2rem;
+    }
+    .footer__wrapper .us{
+        display: block;
+    }
+    .footers__wrapper {
+        flex-direction: column;
+        padding: 2rem
+    
+    }
+
+    /* all countries */
+    .consul {
+        width: 49rem;
+    }
+    .consul .text {
+        width: 100%;
+        padding-top: 1rem;
+       text-align: center;
+    }
+    .consul .text p {
+        
+        padding-bottom: 1rem;
+    }
+    .consul .text .txt_btn {
+        width: 80%;
+        margin: 0 auto;
+    }
+  
+
+}
